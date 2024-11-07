@@ -1,0 +1,458 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3e9dd;
+    color: #333; /* Warna teks utama */
+    line-height: 1.6; /* Tinggi baris untuk kenyamanan membaca */
+    letter-spacing: 0.5px; /* Jarak antar huruf */
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #4a2d15; /* Warna heading yang sesuai dengan tema */
+}
+
+h1 {
+    font-size: 2em; /* Heading utama */
+}
+h2 {
+    font-size: 1.5em; /* Subheading */
+}
+p {
+    font-size: 1em; /* Teks paragraf */
+}
+
+
+p, a, button {
+    font-weight: 400;
+    font-size: 1em;
+    color: #555; /* Warna teks utama untuk paragraf */
+}
+
+/* Header */
+header {
+    background-color: #bfa87a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Jarak antara setiap tautan */
+    margin-top: 10px; /* Jarak tambahan di atas navigasi */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #a7865b; /* Warna saat tautan di-hover */
+}
+
+/* CSS untuk menyelaraskan gambar profil dengan teks di sebelah kiri */
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-content .text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+/* Styling untuk gambar profil dan icon */
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Menjaga gambar dan ikon berada di tengah secara vertikal */
+    padding-top: 10px;
+}
+/* Styling untuk ikon media sosial */
+.icons a {
+    margin: 0px;
+    font-size: 3px; /* Ukuran ikon */
+    color: #333; /* Warna ikon */
+    transition: color 0.3s;
+    display: inline-block
+}
+
+.icons a:hover {
+    color: #bfa87a; /* Warna ikon saat hover */
+    transform: scale(1.1);  /* Efek zoom saat hover */
+}
+
+.icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Memberi jarak antar ikon */
+    margin-top: 20px;
+}
+
+.icons img.icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+/* Styling untuk gambar profil */
+.image img {
+    margin-top: -15px;
+    width: 150px; /* Ukuran gambar lebih kecil */
+    height: 150px; /* Ukuran gambar lebih kecil */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover; /* Menjaga gambar tetap proporsional dan terpotong dengan baik */
+    border: 3px solid #fff; /* Menambahkan border putih di sekitar gambar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin-bottom: 20px; /* Memberi jarak antara gambar dan ikon */
+}
+
+/* Styling umum untuk konten utama */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menyusun elemen secara horizontal di tengah */
+    padding: 2em;
+    text-align: center; /* Menjaga teks agar tetap terpusat */
+}
+
+#profile-pic {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk teks pada bagian home */
+.text {
+    max-width: 60%;
+}
+
+/* Memberi jarak antara teks "I am Novi Yuliani" dan paragraf di bawahnya */
+.text h1 {
+    margin-bottom: 10px; /* Sesuaikan nilai ini sesuai kebutuhan */
+}
+
+/* Atau kamu bisa memberi margin-top pada paragraf */
+.text p {
+    margin-top: 20px;
+    padding-bottom: 20px; /* Memberi jarak antara paragraf dan tombol */
+}
+
+/* Animasi muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.role-wrapper {
+    border-top: 1px solid #ddd; /* Garis pembatas */
+    text-align: center;
+    margin-top: -10px;
+}
+
+.role {
+    font-size: 1em;
+    color: #a7865b;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Menambahkan jarak antara teks dan ikon */
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.role:hover {
+    color: #8b5e34; /* Variasi warna lebih gelap */
+    transform: scale(1.05); /* Efek zoom */
+}
+
+
+/* Animasi muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Styling tombol umum */
+.buttons-wrapper {
+    margin-top: 20px; /* Beri jarak antara paragraf dan tombol */
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Warna tema krem untuk tombol */
+.more-info {
+    background-color: #d2b48c; /* Warna krem yang sesuai */
+}
+
+.more-info:hover {
+    background-color: #c0a480; /* Warna saat hover untuk tema krem */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn.download-cv {
+    background-color: #bfa87a; /* Sesuaikan warna sesuai tema */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn.download-cv:hover {
+    background-color: #a7865b;
+    transform: translateY(-3px);
+}
+
+/* Styling untuk tombol 'Ubah Warna Latar' */
+#colorToggleBtn {
+    background-color: #d2b48c; /* Warna krem yang sesuai dengan tema */
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#colorToggleBtn:hover {
+    background-color: #c0a480; /* Warna lebih gelap untuk efek hover */
+    transform: translateY(-5px); /* Efek naik saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Bagian About */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Efek 3D pada box */
+.about-content .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content .box:hover {
+    transform: translateY(-10px);  /* Efek hover ke atas */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling untuk heading dan paragraf */
+.about-content .box h2 {
+    color: #bfa87a;
+    margin-bottom: 10px;
+}
+
+.about-content .box p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Menghilangkan gambar hobi */
+.about-content .hobby-image {
+    display: none;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Jadi 1 kolom jika layar kecil */
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Pengaturan untuk halaman contact */
+.contact-form {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-form h2 {
+    color: #bfa87a;
+    margin-bottom: 15px;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #bfa87a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    background-color: #bfa87a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form button:hover {
+    background-color: #a7865b;
+    transform: translateY(-3px);
+}
+
+.contact-form button:active {
+    background-color: #bfa87a;
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+    }
+}
+
+/* Styling untuk footer */
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #bfa87a; /* Warna latar belakang yang serasi dengan tema */
+    text-align: center;
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus untuk memberi dimensi */
+}
+
+/* Tambahkan jarak antar elemen di dalam footer jika ada lebih dari satu */
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px; /* Mengurangi padding di layar kecil */
+        font-size: 0.9em; /* Menyesuaikan ukuran font */
+    }
+}
+
+
