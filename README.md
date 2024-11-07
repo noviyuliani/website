@@ -59,7 +59,5 @@ Proyek ini memiliki struktur folder dan file sebagai berikut:
 
 ## Cara Menjalankan Proyek
 
-1. **Kloning atau Unduh Proyek**  
-   Jika menggunakan Git, jalankan perintah berikut untuk mengunduh proyek:
-   ```bash
-   git clone https://github.com/username/repository.git
+1. **Berikut link website untuk Kloning atau Unduh Proyek saya**  
+  https://noviyuliani.github.io/website/
